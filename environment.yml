@@ -1,0 +1,36 @@
+name: bioinformatics-workshop
+
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  # Python and notebook kernels
+  - python=3.10
+  - ipykernel
+  - bash_kernel
+
+  # Python libraries
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+
+  # R and notebook kernel
+  - r-base
+  - r-irkernel
+
+  # R packages
+  - r-ggplot2
+  - r-dplyr
+  - r-tidyr
+  - r-vegan
+  - bioconductor-dada2
+  - bioconductor-phyloseq
+
+  # Bioinformatics tools
+  - fastqc
+  - multiqc
+  - cutadapt

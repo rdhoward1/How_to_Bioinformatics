@@ -1,0 +1,6 @@
+Homo sapiens
+Canis lupus
+Felis catus
+Homo sapiens
+Pan troglodytes
+Canis lupus
