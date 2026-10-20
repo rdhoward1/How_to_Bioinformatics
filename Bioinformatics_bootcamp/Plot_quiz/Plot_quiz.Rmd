@@ -1,0 +1,169 @@
+---
+title: "Quiz: Using plot() in R"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(gradethis)
+tutorial_options(exercise.checker = gradethis::grade_learnr)
+```
+
+## plot()
+
+### Exercise
+
+*Here's a simple exercise with an empty code chunk provided for entering the answer.*
+
+Write the R code required to add two plus two:
+
+```{r two-plus-two, exercise=TRUE}
+
+
+
+```
+
+```{r two-plus-two-solution}
+2 + 2
+```
+
+##### Exercise 1: Plot a single point
+Write the R code we would use to plot a point at (9, 1).
+
+```{r plotq-1, exercise=TRUE}
+
+
+
+```
+
+```{r plotq-1-solution}
+plot(9, 1)
+```
+
+##### Exercise 2: Create x and y coordinate lists
+Write the R code we would use to create a list of x coordinates and a list of y coordinates.
+
+-   x coordinates=8, 9, 5, 6
+-   y coordinates=10, 9, 1, 7
+
+```{r plotq-2, exercise=TRUE}
+
+
+
+```
+
+```{r plotq-2-solution}
+x <- c(8, 9, 5, 6)
+y <- c(10, 9, 1, 7)
+```
+
+##### Exercise 3: Simple scatterplot
+Suppose you have two numeric vectors, `x <- c(1,2,3,4,5)` and `y <- c(2,4,6,8,10)`. What would plot(x, y) show you? Plot to see!
+
+```{r plotq-3, exercise=TRUE}
+
+
+
+
+```
+
+```{r plotq-3-solution}
+x <- c(1,2,3,4,5)
+y <- c(2,4,6,8,10)
+plot(x, y)
+```
+
+##### Exercise 4: Add title and axis labels
+From the plot above, please add a title called "*Scatterplot*". Please also add x- and y- axis titles, called "*points*" (x-axis) and "*lines*" (y-axis).
+
+```{r plotq-4, exercise=TRUE}
+
+
+
+
+```
+
+```{r plotq-4-solution}
+plot(x, y, main="Scatterplot", xlab="points", ylab="lines")
+```
+
+##### Exercise 5: Plot built-in dataset
+Load in the dataset `cars`. Plot the `cars` data. What kind of plot does it produce? Why do you think R can make this plot without specifying x and y separately?
+
+```{r plotq-5, exercise=TRUE}
+
+
+
+
+```
+
+```{r plotq-5-solution}
+data(cars)
+plot(cars)
+```
+
+##### Exercise 6: Change point shape
+Change the plot from above to make the data points as triangles instead of circles.
+
+```{r plotq-6, exercise=TRUE}
+
+
+
+
+```
+
+```{r plotq-6-solution}
+plot(cars, pch=2)
+```
+
+### Quiz
+
+*This is not graded, it will just give you immediate feedback!! Please just take your time and really try to understand and grasp the general concepts. Remember that you can always look up the specific function for something, but knowing the baseline syntax is key in your coding journey!*
+
+Questions
+```{r quiz}
+quiz(
+  question("In your own words, what does the plot() function do in R?",
+           answer("It makes visualizations of data, often scatterplots.", correct = TRUE),
+           allow_retry = TRUE
+  ),
+  question("Which command will make a scatterplot of x and y, where x <- c(1,2,3,4,5) and y <- c(2,4,6,8,10)?",
+           answer("plot(x, y)", correct = TRUE),
+           answer("plot(y, x)"),
+           answer("scatter(x, y)"),
+           answer("graph(x, y)"),
+           allow_retry = TRUE
+  ),
+  question("Which command correctly adds a title and axis labels?",
+           answer('plot(x, y, main="My First Plot", xlab="X values", ylab="Y values")', correct = TRUE),
+           answer('plot(x, y, title="My First Plot", xlabel="X values", ylabel="Y values")'),
+           answer('plot(x, y, main="My First Plot", labels=c("X values","Y values"))'),
+           allow_retry = TRUE
+  ),
+  question("Which command makes the points red triangles?",
+           answer('plot(x, y, pch=2, col="red")', correct = TRUE),
+           answer('plot(x, y, shape=2, color="red")'),
+           answer('plot(x, y, pch="triangle", col="red")'),
+           allow_retry = TRUE
+  ),
+  question("Which option draws lines connecting the points?",
+           answer('plot(x, y, type="l")', correct = TRUE),
+           answer('plot(x, y, type="points")'),
+           answer('plot(x, y, connect=TRUE)'),
+           allow_retry = TRUE
+  ),
+  question("What happens when you run plot(cars)?",
+           answer("It makes a scatterplot of the built-in dataset `cars`", correct = TRUE),
+           answer("It produces an error because cars is not defined"),
+           answer("It creates a barplot of the dataset `cars`"),
+           allow_retry = TRUE
+  ),
+  question("Which command makes a scatterplot of cars with blue squares and the title 'Cars Data'?",
+           answer('plot(cars, pch=15, col="blue", main="Cars Data")', correct = TRUE),
+           answer('plot(cars, shape="square", color="blue", title="Cars Data")'),
+           answer('plot(cars, pch="square", col="blue", label="Cars Data")'),
+           allow_retry = TRUE
+  )
+)
+```
