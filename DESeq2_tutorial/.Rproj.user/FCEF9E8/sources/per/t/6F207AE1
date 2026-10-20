@@ -1,0 +1,29 @@
+{
+    "id": "6F207AE1",
+    "path": "~/Desktop/How-to-Bioinformatics/DESeq2_tutorial/deseq_tut.Rmd",
+    "project_path": "deseq_tut.Rmd",
+    "type": "r_markdown",
+    "hash": "2315885769",
+    "contents": "",
+    "dirty": false,
+    "created": 1758644110036.0,
+    "source_on_save": true,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "530,20",
+        "scrollLine": "521",
+        "docOutlineVisible": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1760039503,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1760039503141,
+    "read_only": false,
+    "read_only_alternatives": []
+}

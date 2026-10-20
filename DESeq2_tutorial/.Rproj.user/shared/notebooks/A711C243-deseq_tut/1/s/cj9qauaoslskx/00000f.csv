@@ -1,0 +1,13 @@
+"0","#if (!require(""BiocManager"", quietly = TRUE))"
+"0","#    install.packages(""BiocManager"") ## run if you need to install BiocManager"
+"0",""
+"0","#BiocManager::install(""DESeq2"") # run if you need to install DESeq2"
+"0","#BiocManager::install(""airway"") # run if you need to install the airway dataset"
+"0","#BiocManager::install(""tximport"") # run if you need to install the tximport package"
+"0","#BiocManager::install(""tximportData"")"
+"0","#BiocManager::install(""readr"") # for reading sample metadata"
+"0",""
+"0","## Always load your libraries!"
+"0","library(DESeq2)"
+"2","Error in library(DESeq2) : there is no package called ‘DESeq2’
+"
